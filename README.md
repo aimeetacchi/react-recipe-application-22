@@ -1,7 +1,8 @@
-# My React and Redux Boilerplate Starter ====
-Has Scss and React Router DOM and basic Components set up.
+# My React and Amplify Recipe CookBook App ====
 
+This application uses - Create React App, React, React Router, Redux and Styled Components for frontend, AWS AMPLIFY for Backend, GraphQL, AWS S3bucket, DynamoDB.
 
+users can view recipes that other users have created you can also sign up and sign in and create your own recipes to add to the rest of them.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
