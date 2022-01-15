@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "recipeamplifyapp22",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authrecipeamplifyapp229a9fd1cf",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,319 @@
+[
+    {
+        "id": 1,
+        "name": "Bangers and Mash",
+        "img": "/assets/images/bangersandmash1.jpg",
+        "serves": 1,
+        "difficulty": "easy",
+        "prepTime": 10,
+        "cookingTime": 40,
+        "ingredients": ["2 pounds fresh sausages (8 large sausages)", "2 pounds potatoes, peeled and diced", "Salt", "4 tablespoons (1/2 stick) unsalted butter, diced", "4 ounces creme fraiche", "1/2 cup whole milk", "2 teaspoons Dijon mustard", "2 teaspoons whole-grain or coarse mustard", "1 teaspoon dry mustard", "1 teaspoon freshly ground black pepper", "Fresh parsley, for garnish" ],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "Preheat the oven to 210°C. Place a baking rack on a sheet pan and arrange the sausages in one layer on the baking rack.",
+
+            "Bake for 18 to 20 minutes, until the sausages are just cooked through.",
+
+            "Meanwhile, place the potatoes in a large saucepan with 1 tablespoon of salt and enough water to cover the potatoes.",
+
+            "Bring to a boil and simmer for 20 to 25 minutes, until the potatoes are very tender.",
+
+            "Drain the potatoes in a colander and return them to the saucepan.",
+
+            "Add the butter, creme fraiche, milk, Dijon mustard, whole-grain mustard, dry mustard, 1 tablespoon salt, and the pepper and beat the potatoes in the pan with a handheld mixer on low speed until very smooth and creamy.",
+
+            "To serve, mound a generous portion of potatoes on a dinner plate and top with sausages that have been cut in half diagonally.",
+
+            "Sprinkle with fresh chopped parsley and serve."],
+        "tags": ["sausage", "potato", "button", "creme fraiche", "milk", "mustard", "pepper", "parsley", "main course", "british", "comforting"]
+    },
+    {
+        "id": 2,
+        "name": "Roasted Tomato Soup with Toasted Cheese",
+        "img": "/assets/images/roasted-tomato-soup-with-toasted-cheese.jpg",
+        "serves": 2,
+        "difficulty": "easy",
+        "prepTime": 5,
+        "cookingTime": 10,
+        "ingredients": ["10 roasted plum tomatoes", "2 cups tomato juice","Splash hot sauce","1 tablespoon brown sugar", "80ml olive oil", "4 cloves peeled whole garlic", "3 sliced sweet potato bread", "Salt and pepper", "Soft butter for bread", "7 or 8 slices cheese – edam and cheddar" ],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "Add olive oil to hot pan. Roast garlic, then add roasted tomatoes, tomato juice and hot sauce. Simmer till warmed through (5min).",
+
+            "Add to blender and blend, adding olive oil and sugar whilst blending. Season to taste then pass through sieve.",
+
+            "Butter slices of bread and season. Add cheese slices between bread.",
+
+            "Assemble sandwich and place on hot press to toast.",
+            "Drain the potatoes in a colander and return them to the saucepan.",
+            "Pour soup out of pot and enjoy with hot toasted cheese"],
+        "tags": ["tomato", "hot sauce", "sugar", "olive", "garlic", "potato", "pepper", "cheddar", "starters", "dinner party"]
+    },
+    {
+        "id": 3,
+        "name": "Spiced Caramel Roulade with Ginger Cream",
+        "img": "/assets/images/spiced-caramel-roulade-with-ginger-cream.jpg",
+        "serves": 8,
+        "difficulty": "medium",
+        "prepTime": 40,
+        "cookingTime": 15,
+        "ingredients": ["vegetable oil", "210g plain flour, plus more for dusting pan","1/2 tsp bicarbonate of soda", "1/2 tsp baking powder","1/2 tsp cinnamon","1/2 tsp ground cloves","1/2 tsp fine salt", "1/4 tsp ground ginger","1/4 tsp ground cardamom","2 (70g) jars sweet potato baby food","80ml buttermilk","2 tsp vanilla essence","115g unsalted butter, softened","200g granulated sugar","3 large eggs, at room temperature","Icing sugar, for dusting"],
+        "extraIngredients": ["355ml double cream", "1 tbsp icing sugar","90g thinly sliced (or chopped) crystallised ginger","60ml caramel sauce","Ground cinnamon, for dusting, optional"],
+        "extraIngredients2": [],
+        "steps": [
+            "Position a rack in the centre of the oven and preheat to 180C/Gas 4. Lightly grease, then line a 33 by 45cm jelly-roll pan with parchment or waxed paper. (Let the paper come up the long sides by about 5cm - this will make it easier to form the roll.) Brush paper with oil or butter, dust with flour, tap out excess.",
+            
+            "For the cake: Whisk together plain flour, bicarbonate of soda, baking powder, cinnamon, cloves, salt, ginger and cardamom together in a medium bowl. In another bowl, combine sweet potato, buttermilk, and vanilla until smooth.",
+            
+            "Beat butter and sugar in the bowl of an electric mixer on high speed until light and fluffy, about 4 mins. Reduce to low; add eggs 1 at a time, beating well after each addition. Add flour mixture in 3 parts, alternating with the wet mixture in 2 parts, beginning and ending with flour. Beat until just blended. (If needed, fold batter together with a rubber spatula.)",
+            
+            "Spread batter evenly in prepared pan. Bake until cake springs back when pressed lightly, about 15 mins.",
+            
+            "Run knife around cake edge, and invert cake onto a cotton tea towel (100 percent cotton works best and keeps the cake from sticking) generously dusted with icing sugar. Carefully pull back parchment paper to release, and then place it back on top of the cake. Gently roll up the cake and towel together, starting from the narrow end to make a fat roll.",
+            
+            "Meanwhile for the filling, whip cream and icing sugar to soft peaks. Fold in crystallised ginger.",
+            
+            "Carefully unroll the cake and remove the towel. Drizzle caramel over the cake. Spread gingered cream evenly over the cake. Using the short edge of parchment as guide, roll the cake up into a fat, loose cylinder. Transfer to a long platter. Dust with more icing sugar and cinnamon in a Halloween pattern if desired. Serve, now or refrigerate until ready to serve."],
+        "tags": ["Vegetable Flour","Bicarbonate Of Soda","Cinnamon","Clove","Ground Ginger","Cardamom","Potato","Buttermilk","French","Baked"]
+    },
+
+    {
+        "id": 4,
+        "name": "Banana Walnut Bread",
+        "img": "/assets/images/banana-walnut-bread.jpg",
+        "serves": 12,
+        "difficulty": "easy",
+        "prepTime": 20,
+        "cookingTime": 55,
+        "ingredients": ["150g plain flour","1 teaspoon bicarbonate of soda","1/2 teaspoon table salt","2 large eggs, at room temperature","1/2 teaspoon vanilla extract","1/2 cup unsalted butter, at room temperature, plus more for preparing the tin","200g caster sugar","3 very ripe bananas, peeled, and mashed with a fork","50g toasted walnut pieces, roughly chopped"],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "Sift the flour, bicarbonate of soda, and salt into a medium bowl, set aside. Whisk the eggs and vanilla together in a liquid measuring cup with a spout, set aside. Lightly brush a 9 by 5 by 3-inch loaf tin with butter. Preheat the oven to 175°C.",
+            "In a stand mixer fitted with the paddle attachment or with an electric hand-held mixer, cream the butter and sugar until light and fluffy. Gradually pour the egg mixture into the butter while mixing until incorporated. Add the bananas (the mixture will appear to be curdled, so don't worry), and remove the bowl from the mixer.",
+            "With a rubber spatula, mix in the flour mixture until just incorporated. Fold in the nuts and transfer the batter to the prepared pan. Bake for 55 minutes or until a toothpick inserted into the center of the bread comes out clean. Cool the bread in the pan on a wire rack for 5 minutes. Turn the bread out of the pan and let cool completely on the rack. Wrap in cling film. The banana bread is best if served the next day."],
+        "tags": ["Flour","Bicarbonate Of Soda","Vanilla","Butter","Sugar","Banana","Walnut","Snacks","Picnic","Easter","Afternoon Tea","American","Baked"]
+    },
+
+    {
+        "id": 5,
+        "name": "Pasta with Pecorino and Pepper",
+        "img": "/assets/images/pasta-with-pecorino-and-pepper.jpg",
+        "serves": 3,
+        "difficulty": "medium",
+        "prepTime": 20,
+        "cookingTime": 25,
+        "ingredients": ["1 tbsp whole black Tellicherry peppercorns","Salt","250g dried Italian egg pasta, such as tagliatelle","100g freshly grated aged Pecorino cheese, plus extra for serving","30ml double cream","15g unsalted butter","2 tbsp minced fresh parsley leaves"],
+        "extraIngredients": ["355ml double cream", "1 tbsp icing sugar","90g thinly sliced (or chopped) crystallised ginger","60ml caramel sauce","Ground cinnamon, for dusting, optional"],
+        "extraIngredients2": [],
+        "steps": [
+            "Place the peppercorns in a mortar and pestle and crush them until you have a mixture of coarse and fine bits. (You can also grind them in a small food mill or coffee grinder.) Set aside.",
+            
+            "Fill a large, heavy-bottomed pot with water and bring to a boil over high heat. Add 1 tbsp salt and the pasta and cook according to the directions on the package until al dente.",
+            
+            "Ladle 250ml of the pasta cooking water into a glass measuring cup and reserve it. Drain the pasta quickly in a colander and return the pasta to the pot with a lot of the pasta water still dripping.",
+            
+            "Working quickly, with the heat on very low, toss the pasta with 50g of the grated pecorino, the crushed peppercorns, cream, butter, parsley and 1 tsp salt, tossing constantly. If the pasta seems dry, add some of the reserved cooking water.",
+
+            "Off the heat, toss in the remaining 50g Pecorino. Serve immediately with a big bowl of extra grated pecorino for sprinkling."],
+        "tags": ["Peppercorn","Pastum","Cheese","Cream","Butter","Parsley","Main Course","Lunch","Vegetarian","Party","Father's Day","Mother's Day","Halloween","Italian"]
+    },
+
+    {
+        "id": 6,
+        "name": "Chicken Piccata",
+        "img": "/assets/images/chicken-piccata.jpg",
+        "serves": 2,
+        "difficulty": "medium",
+        "prepTime": 15,
+        "cookingTime": 15,
+        "ingredients": ["1 boneless, skinless chicken breast, split in two","Sea salt and freshly ground black pepper","70g plain flour","1 extra large egg","1/2 tbsp water","75g seasoned dry bread crumbs","Good olive oil","35g unsalted butter, room temperature, divided in three parts","80ml freshly squeezed lemon juice, lemon halves reserved","125ml dry white wine","Sliced lemon, for serving","Chopped fresh parsley leaves, for serving"],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "Preheat the oven to 200°C/gas mark 6. Line a baking sheet with parchment paper.",
+            
+            "Place each chicken breast between two sheets of parchment paper or cling film and pound out to 1/2cm thick. Sprinkle both sides with salt and pepper.",
+            
+            "Mix the flour, 1/2 tsp salt, and 1/4 tsp of pepper in a shallow plate. In a second plate, beat the egg and 1/2 tbsp of water together. Place the bread crumbs on a third plate. Dip each chicken breast first in the flour, shake off the excess, and then dip in the egg and bread crumb mixtures.",
+            
+            "Heat 1 tbsp of olive oil in a large saute pan over medium to medium-low heat. Add the chicken breasts and cook for 2 minutes on each side, until browned. Place them on the baking sheet and allow them to bake for 5 to 10 minutes while you make the sauce.",
+            
+            "For the sauce, wipe out the saute pan with a dry kitchen towel. Over medium heat, melt 1 tbsp of the butter and then add the lemon juice, wine, the reserved lemon halves, 1/2 tsp salt, and 1/4 tsp pepper. Boil over high heat until reduced in half, about 2 minutes. Off the heat, add the remaining 25g of butter and swirl to combine. Discard the lemon halves and serve one chicken breast on each plate. Spoon on the sauce and serve with a slice of lemon and a sprinkling of fresh parsley."],
+        "tags": ["Pepper","Flour","Water","Bread","Olive","Butter","Lemon Juice","Wine","Lemon","Main Course","High Protein","American","Baked"]
+    },
+
+    {
+        "id": 7,
+        "name": "Chicken Tikka Masala",
+        "img": "/assets/images/chicken-tikka-masala.jpg",
+        "serves": 4,
+        "difficulty": "easy",
+        "prepTime": 50,
+        "cookingTime": 35,
+        "ingredients": ["For the sauce","2 tsps olive oil","40g butter","85g ginger-garlic paste (or 6 cloves garlic and 4cm thumb ginger minced)","2 serrano peppers, minced (seeds removed if you don't want it spicy)","2 tbsps tomato puree","1 tsp garam masala","2 tsps paprika","8 Roma tomatoes, diced","1 1/2 tsps salt","230-470ml water","Oil, for griddle","1 tbsp dried fenugreek leaves (optional)","115ml double cream","Minced fresh coriander, for garnish","Cooked rice, naan or crusty piece of bread, for serving"],
+        "extraIngredients": ["For the marinade","225g plain yoghurt, whisked until smooth","3 tbsps ginger-garlic paste (or 1 tbsp grated fresh ginger and 3 cloves garlic put through a garlic press or finely minced)","1 tsp salt","1/2 tsp freshly ground black pepper","450g boneless, skinless chicken thighs, poked with a fork, cut into large","bite-sized chunks"],
+        "extraIngredients2": ["For the ginger-garlic paste","115g cloves garlic, whole","115g fresh ginger, peeled, cut into 1cm slices","3 tbsps vegetable oil"],
+        "steps": [
+            "Make the ginger-garlic paste, Throw the garlic, ginger and vegetable oil in a mini food processor and let it go until it forms a semi-smooth paste. There will still be tiny little pieces in there, but overall it should resemble a paste.","Save what you don't use in a small glass jar. It should last in the fridge for 2-3 weeks. It's a delicious addition to marinades, pasta sauces, stir fry sauces, slow-cooker recipes, gravy, etc. We always had a jar of this stuff in our fridge growing up.","For the marinade, in a large bowl, mix together the marinade ingredients. Add the chicken and toss to coat. Marinate at least 30 minutes, or in the refrigerator up to overnight.","When you're ready to make the curry, place a large skillet over medium heat and add the olive oil and butter. When the butter has melted, add the ginger-garlic paste and serrano peppers. Saute until lightly browned around the edges. Add the tomato puree and cook until the tomato has darkened in colour, about 3 minutes. Add the garam masala and the paprika and saute for about 1 minute to draw out their flavours.","Add the tomatoes, salt and 230ml water. Bring to a boil, turn down to a simmer and cook until thickened, about 20 minutes. You may need more water depending on how much liquid the tomatoes give off.","Meanwhile, fire up your griddle. When it is nice and hot, lightly brush it with oil. Place the chicken on the griddle, shaking off some of the excess marinade. Cook until it's charred, about 2 minutes on each side (don't worry that the chicken will still be a little uncooked, it finishes cooking in the sauce).","Pour the sauce into a blender or food processor, or use an immersion blender, and process until smooth. Pour back into the skillet and bring back up to a boil. Add the chicken and fenugreek leaves, if using. Take the heat down to a simmer and cook for about 10 minutes. Add the cream and stir through.","Garnish with minced fresh coriander and serve over rice, with naan or a crusty piece of bread."],
+        "tags": ["Garlic","Ginger","Vegetable","Yoghurt","Pepper","Main Course","High Protein","Indian","Comforting"]
+    },
+
+    {
+        "id": 8,
+        "name": "Parmigiano Reggiano Canapés with Hot Smoked Salmon",
+        "img": "/assets/images/parmigiano-reggiano-canapes-with-hot-smoked-salmon.jpg",
+        "serves": 10,
+        "difficulty": "easy",
+        "prepTime": 10,
+        "cookingTime": 5,
+        "ingredients": ["15ml crème fraiche","Finely grated zest of one lemon","Fennel seeds, chopped","Grated and shaved Parmigiano Reggiano cheese, to serve","1/2 small fennel bulb","75g hot smoked","Salmon, flaked","Salt and black pepper"],
+        "extraIngredients": ["For the Crisps","50g Parmigiano Reggiano cheese, grated","1 tbsp plain flour"],
+        "extraIngredients2": [],
+        "steps": [
+            "Grease and line a large baking sheet with greaseproof paper.","Mix Parmigiano Reggiano cheese and plain flour, along with a good pinch of black pepper.","Spoon teaspoon-sized rounds of this mixture onto the baking sheet and flatten slightly with the back of the spoon. The mixture should give ten crisps, make sure there is plenty of space between each one, as the mixture will spread a little.","Place the rounds under a hot grill for 2-3 minutes until the cheese has melted to make a golden brown crisp. Remove each crisp carefully using a pallet knife and leave to cool on greaseproof paper.","Mix crème fraiche together with lemon zest and season to taste. To assemble, spoon a small amount of lemon crème fraiche on top of each crisp. Then sprinkle with a few fennel seeds, grated Parmigiano Reggiano cheese and finely chopped fennel, before topping with flakes of hot smoked salmon and black pepper.","Finally, garnish with sprigs of fresh fennel and serve.","Cook’s tip: Make things easy for yourself and prepare ahead. Both the crisps and lemon cream can be made in the morning, just keep the crisps in an air-tight container and refrigerate the cream."],
+        "tags": ["Creme Fraiche","Lemon","Fennel Seed","Cheese","Fennel","Salmon","Pepper","Flour","Snacks","Starters","Dinner Party","Party","Italian","Baked","Canapes"]
+    },
+
+    {
+        "id": 9,
+        "name": "Chocolate Cheesecake Candy Cane Bars",
+        "img": "/assets/images/chocolate-cheesecake-candy-cane-bars.jpg",
+        "serves": 16,
+        "difficulty": "easy",
+        "prepTime": 20,
+        "cookingTime": 45,
+        "ingredients": ["20 chocolate wafer cookies","45g unsalted butter, melted","15g granulated sugar","0.5 tsp ground coffee beans","0.25 tsp fine salt"],
+        "extraIngredients": ["For the filling","225g milk chocolate, finely chopped","225g cream cheese,room temperature","135g granulated sugar","95g sour cream","2 large eggs, room temperature"],
+        "extraIngredients2": ["For the glaze","115g dark chocolate, chopped","30g unsalted butter","1 tsp ","golden syrup","25g sour cream, room temperature","100g crushed candy canes (see Cooks Note)"],
+        "steps": [
+            "For the base: 1) Preheat oven to 180C/Gas 4. Line an 20cm square baking dish with foil.",
+            
+            "2) Process the chocolate wafers in a food processor with the butter, sugar, coffee and salt until fine. Evenly press into the prepared dish covering the bottom completely. Bake until the base sets, about 15 mins.",
+            
+            "For the filling: Put the chocolate in a medium microwave-safe bowl; heat at 75 percent power until softened, about 2 mins. Stir, and continue to microwave until completely melted, up to 2 mins more. (Alternatively put the chocolate in a heatproof bowl. Bring a saucepan filled with 2cm or so of water to a very slow simmer; set the bowl over, but not touching, the water, and stir occasionally until melted and smooth.)",
+            
+            "Blend the cream cheese, sugar and sour cream together in the food processor until smooth. Scrape down the sides, as needed. Add the eggs and pulse until just incorporated. With the food processor running, pour the chocolate into the wet ingredients and mix until smooth.",
+            
+            "Pour the filling evenly over the base. Bake until the filling puffs slightly around the edges, but is still a bit wobbly in the centre, about 25 to 30 mins. Cool on a rack.",
+            
+            "For the glaze: Put the chocolate, butter and golden syrup in microwave safe bowl. Heat the glaze in the microwave at 75 percent power until melted, about 2 mins. Stir the ingredients together until smooth; add the sour cream.",
+            
+            "Spread the glaze evenly over the warm cake and scatter the crushed candy canes over top. Cool completely, then refrigerate overnight.",
+            
+            "Cut into small bars or squares and serve chilled or at room temperature. Store the cakes covered in the refrigerator for up to 5 days.",
+            
+            "Cook's Note: To crush the candy canes, remove the wrappers and place in a resealable plastic bag. Use a rolling pin to roll and break the candy up into small pieces, about 0.5cm or so."],
+        "tags": ["Chocolate","Butter","Sugar","Coffee","Cheese","Cream","Snacks","Party","Father's Day","Diwali","American","Baked"]
+    },
+
+    {
+        "id": 10,
+        "name": "Christmas Cookie Cocktail",
+        "img": "/assets/images/christmas-cookie-cocktail.jpg",
+        "serves": 1,
+        "difficulty": "easy",
+        "prepTime": 15,
+        "cookingTime": 0,
+        "ingredients": ["Chocolate sauce, for drizzling","60ml White Godiva vodka","60ml Bailey's Irish Cream","15ml peppermint schnapps","15ml single cream","Miniature candy canes or chocolate shavings for garnish"],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "1) Drizzle chocolate sauce on a chilled martini glass.",
+            
+            "2) Add a measure of White Godiva Vodka, Bailey's Irish Cream, peppermint schnapps and single cream.",
+            
+            "3) Garnish with a miniature candy cane or chocolate shavings."],
+        "tags": ["Chocolate","Vodka","Irish Cream","Schnapp","Cream","Christmas","American","Drinks","Cocktails","No Cooking Required"]
+    },
+
+    {
+        "id": 11,
+        "name": "Tomato Feta Pasta Salad",
+        "img": "/assets/images/tomato-feta-pasta-salad.jpg",
+        "serves": 6,
+        "difficulty": "easy",
+        "prepTime": 20,
+        "cookingTime": 25,
+        "ingredients": ["225g fusilli (spirals) pasta","Coarse salt","Good olive oil","450g ripe tomatoes, medium-diced","75g good black olives, such as kalamata, pitted and diced","450g good feta cheese, medium-diced","6 sun-blushed tomatoes in oil, drained and chopped"],
+        "extraIngredients": ["For the dressing","5 sun-blushed tomatoes in oil, drained","2 tbsp red wine vinegar","6 tbsp good olive oil","1 garlic clove, diced","1 tsp capers, drained","1 tsp coarse salt","3/4 tsp freshly ground black pepper","100g freshly grated Parmesan, to garnish","30g packed flat-leaf parsley, chopped, to garnish"],
+        "extraIngredients2": [],
+        "steps": [
+            "Cook the pasta in a large pot of boiling salted water with a splash of oil to stop it sticking together. Boil for 12 minutes, or according to the directions on the package. Drain well and allow to cool.",
+            
+            "Place the pasta in a bowl and add the tomatoes, olives, feta and chopped sun-blushed tomatoes.",
+            "For the dressing, combine the sun-blushed tomatoes, vinegar, olive oil, garlic, capers, salt and pepper in a food processor until almost smooth.",
+            
+            " Pour the dressing over the pasta, sprinkle with the Parmesan and parsley, and toss well."],
+        "tags": ["Pastum","Olive","Tomato","Cheese","Vinegar","Main Course","Lunch","Side Dish","Healthy","Outdoor Party","Barbecue","Picnic","New Year's Eve","Italian","Comforting"]
+    },
+
+    {
+        "id": 12,
+        "name": "Coronation Turkey Filled Jackets",
+        "img": "/assets/images/coronation-turkey-filled-jackets.jpg",
+        "serves": 4,
+        "difficulty": "easy",
+        "prepTime": 60,
+        "cookingTime": 15,
+        "ingredients": ["1 tbsp rape seed oil","1 small onion, peeled and finely chopped","1 tbsp mild curry paste","1 tsp tomato puree","1 tbsp red wine","125ml chicken stock","1 bay leaf","Sea salt and black pepper","1 tsp sugar","Juice of 1/2 a lemon","450ml good quality mayonnaise","4 tbsp apricot puree (made from 250g ready-to-eat dried apricots and boiled)","2 tbsp double cream, lightly whipped","500g free-range cooked Golden Turkey, diced","4-6 large potatoes, baked","Paprika, to garnish"],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "Heat a tablespoon of rapeseed oil in a frying pan, add the chopped onion and cook on a low heat for 3 minutes. Then add the curry paste and cook for a further 2 minutes. Remove from the heat and add the tomato puree, red wine, chicken stock and bay leaf, season well with sea salt and black pepper and bring to the boil. Add the sugar and the lemon juice and simmer for 5 – 10 minutes, strain and cool. Then slowly add the curry mixture to 450ml of good quality mayonnaise, then stir in two tablespoons of apricot puree and fold in the softly whipped cream and cooked turkey.",
+            
+            "To serve, cut a cross in the potato, but not all the way through and fill with the coronation turkey and sprinkle with paprika.",
+            
+            "Tip: If you make too much apricot puree, freeze the rest for future use. "],
+        "tags": ["Seed","Onion","Curry Paste","Tomato","Wine","Chicken","Bay Leaf","Pepper","Sugar","Juice","Apricot","Main Course","Lunch","New Year's Eve","Baked"]
+    },
+
+    {
+        "id": 13,
+        "name": "Double-Batch Classic Bolognese",
+        "img": "/assets/images/double-batch-classic-bolognese.jpg",
+        "serves": 4,
+        "difficulty": "easy",
+        "prepTime": 15,
+        "cookingTime": 20,
+        "ingredients": ["2 cups whole milk","1/4 cup extra-virgin olive oil","1/4 pound pancetta, finely diced","4 ounces trimmed chicken livers, finely diced, optional, but recommended","2 small onions, finely chopped","2 small ribs celery, finely chopped, with leafy tops, chopped","1 large carrot, peeled and finely chopped","6 cloves garlic, chopped","2 small sprigs fresh rosemary, leaves picked and finely chopped","2 fresh bay leaves","2 1/2 pounds ground beef (chuck or sirloin) and veal mix","Salt and freshly ground black pepper","Freshly grated nutmeg","2 pinches ground cloves","1 1/2 cups dry white wine (about 1/3 bottle)","2 cups beef stock","2 cups chicken or vegetable stock","2 (28-ounce) cans Italian pureed tomatoes","1 pound egg tagliatelle or bucatini pasta","3 tablespoons butter","Grated Parmigiano Reggiano cheese"],
+        "extraIngredients": [],
+        "extraIngredients2": [],
+        "steps": [
+            "You know you love it and you know you make it your own special way if you've ever made it before. Here is my take on the classic, if only to be used as a helpful reminder to make-ahead a batch especially in the winter months.",
+            
+            "Warm 2 cups milk in small pot over lowest heat.",
+            
+            "Heat 1/4 cup olive oil in a large Dutch oven over medium to medium-high heat. Add the pancetta and cook until lightly brown. Then add the chicken livers, and cook almost through. Add the onions, celery, carrots, garlic, rosemary, and bay leaves, and cook until tender, 10 minutes.",
+            
+            "Add the ground meat and cook through breaking into pieces, but do not brown. Season with salt, pepper, nutmeg, clove, and stir in the wine and allow it to cook into the meat, 2 to 3 minutes. Add the warm milk to the meat and allow it to absorb into the meat for 1 minute. Stir in the beef stock, vegetable stock, and tomatoes. Bring to a simmer, then reduce the heat and simmer over low heat for 2 hours, stirring occasionally.",
+            
+            "Divide the sauce in 1/2, cool, and freeze one batch. Cool and store the remainder for a make-ahead meal within the week. Alternately, cook pasta to al dente, thin the sauce a bit with a bit of starchy pasta water and toss with pasta dressed with butter to combine. Top with grated cheese and chopped celery leaves. Serve with green salad."],
+        "tags": ["Milk","Olive","Pancettum","Chicken","Onion","Celery","Garlic","Rosemary","Bay Leaf","Main Course","Italian"]
+    },
+
+    {
+        "id": 14,
+        "name": "Pork and Prawn Boiled Wontons",
+        "img": "/assets/images/pork-and-prawn-boiled-wontons.jpg",
+        "serves": 8,
+        "difficulty": "medium",
+        "prepTime": 25,
+        "cookingTime": 10,
+        "ingredients": ["For the Filling","225g ground lean pork","225g large (16/20) shrimp, peeled, deveined, and finely chopped","1 tbsp ginger, freshly peeled and grated","2 tbsp Chinese chives, finely chopped","1 tbsp Shaohsing rice wine or dry sherry","1 tbsp light soy sauce, plus more for dusting","1 tsp toasted sesame oil","Freshly ground white pepper"],
+        "extraIngredients": ["For the Wontons","36 wonton wrappers, 7.5cm square","1 egg, beaten","Cornflour, for dusting sheet tray","Vegetable oil, for frying"],
+        "extraIngredients2": ["For the Chilli Sauce","2 tbsp light soy sauce","1 heaped","tbsp Guilin chili sauce","For the Garnish","1 tbsp finely chopped chives"],
+        "steps": [
+            "In a medium bowl, combine all the ingredients for the filling, mix well and set aside.",
+            
+            "Take one wonton wrapper and place one and a half teaspoons of the filling in the centre. Brush the edges of the wrapper with the beaten egg and then gather up the sides and mold around the filling making a ball shape, twisting the top to secure. Repeat with the remaining wrappers, lining them up on a cookie sheet, lined with parchment paper and dusted lightly with cornstarch. Place the wontons in the freezer for an hour to firm them up before cooking. Once frozen for an hour, you can cook them or transfer them to an airtight container and freeze them until you are ready to use them.",
+            
+            "In a small bowl, combine all the ingredients for the chili sauce and set aside.","Bring a wok halfway full with water to a boil and then reduce heat to a simmer. Cook the wontons for three to four minutes or until they float to the surface. Remove with a slotted spoon. Serve immediately garnished with chopped chives, plus the chili dipping sauce.",
+            
+            "Yield: 36 wontons Prep Time: 15 minutes; 20 minutes to assemble Cook Time: 3 minutes per batch Ease of Preparation: intermediate Cook’s Note: Chinese chives are also known as garlic chives or Japanese nira"],
+        "tags": ["Pork","Ginger","Chive","Rice Wine","Soy Sauce","Sesame","Pepper","Wonton","Healthy","Party","Chinese"]
+    }
+
+]

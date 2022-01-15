@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "recipeamplifyapp22",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Users\\aimee\\Desktop\\git\\recipe-amplify-app-22\\amplify\\backend\\api\\recipeamplifyapp22\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authrecipeamplifyapp229a9fd1cf"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
+  }
+}
