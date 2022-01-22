@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Auth } from 'aws-amplify';
+import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
 import { Search } from './actions/Search'
@@ -15,29 +17,31 @@ import Error from './components/Pages/Error.jsx'
 import Footer from './components/Footer.jsx';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [authState, setAuthState] = useState();
+  const [user, setUser] = useState();
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
-  useEffect(() => {
-    AssessLoggedInState();
-  }, [loggedIn]);
 
-  const AssessLoggedInState = () => {
-    Auth.currentAuthenticatedUser().then(() => {
-      setLoggedIn(true)
-      console.log(loggedIn)
-    }).catch(() => {
-      setLoggedIn(false)
-    })
-  }
+  useEffect(() => {
+    
+      if(authState == 'signedin') {
+        navigate('/');
+      }
+
+      return onAuthUIStateChange((nextAuthState, authData) => {
+          setAuthState(nextAuthState);
+          setUser(authData)
+      });
+     
+  }, [authState]);
 
   // Sign Out
   const signOut = async () => {
     try {
       await Auth.signOut()
-      setLoggedIn(false)
+      // setLoggedIn(false)
       navigate('/signin');
     } catch (error) {
       console.log('Error Signing out', error,)
@@ -45,12 +49,12 @@ function App() {
   }
 
   // Sign in
-  const signIn = async (credentials) => {
-    const { email, password} = credentials;
-    const user = await Auth.signIn(email, password);
-    console.log(user)
-    navigate('/');
-  }
+  // const signIn = async (credentials) => {
+  //   const { email, password} = credentials;
+  //   const user = await Auth.signIn(email, password);
+  //   console.log(user)
+  //   navigate('/');
+  // }
 
   const openSearchRecipe = () => {
       console.log('Calling from app..');
@@ -58,17 +62,15 @@ function App() {
       dispatch(Search())
   }
 
-
-
   return (
     <div className="App">
-      <Nav loggedIn={loggedIn} signOut={signOut} openSearchRecipe={openSearchRecipe} />
+      <Nav authState={authState} signOut={signOut} openSearchRecipe={openSearchRecipe} />
     
       <main>
       <Routes>
-          <Route exact path="/" element={<Home loggedIn={loggedIn}/>}/>
+          <Route exact path="/" element={<Home authState={authState}/>}/>
           <Route path='/about' element={<About/>} />
-          <Route exact path="/signin" element={<SignInForm signIn={signIn}/>}/>
+          <Route exact path="/signin" element={<SignInForm authState={authState}/>}/>
           <Route path="*" element={<Error/>} />
       </Routes>
       </main>

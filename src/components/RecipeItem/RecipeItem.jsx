@@ -93,7 +93,7 @@ const RecipeItem = ({item}) => {
                     </Box>
                     </Fade>
                 </Modal>
-                </div>
+            </div>
         </GridItem>
     )
 }

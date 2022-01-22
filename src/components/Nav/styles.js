@@ -11,7 +11,20 @@ export const NavStyles = styled.nav`
             text-align: center;
             padding: 5px 0;
             font-size: 2.2rem;
+
+            a, span {
+                    color: black;
+                    cursor: pointer;
+                    text-decoration: none;
+                    &:hover {
+                        color: #692a00;
+                    }
+                }
         }
+    }
+
+    .signout {
+        cursor: pointer;
     }
   
  /* Desktop */
@@ -25,13 +38,7 @@ export const NavStyles = styled.nav`
             &__item {
                 padding: 0 10px;
         
-                a {
-                color: $light;
-                text-decoration: none;
-        
-                &:hover {
-                    color: darken($light, 20%);
-                }
+             
                 }
             }
         }

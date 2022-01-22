@@ -3,16 +3,15 @@ import { Link, useLocation } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import { NavStyles } from './styles';
 
-const Nav = ({openSearchRecipe, loggedIn, signOut}) => {
-  
+const Nav = (props) => {
+  const { openSearchRecipe, authState, signOut } = props;
+  console.log('NAV authState', authState )
+
   const { pathname } = useLocation();
 
   const openSearchBox = () => {
     openSearchRecipe();
   }
-
-  useEffect(() => {
-  }, [loggedIn]);
 
   return (
     <NavStyles>
@@ -27,8 +26,7 @@ const Nav = ({openSearchRecipe, loggedIn, signOut}) => {
           (<li className='nav-list__item search'><span onClick={() => openSearchBox()}><SearchIcon/> Search Recipe...</span></li>)
         }
         <li className='nav-list__item'>
-          { loggedIn ? (<button onClick={signOut}>Sign out</button>) : (<Link to='/signin'><button>Sign In</button></Link>)
-          }
+          { authState === 'signedin' ? (<span className="signout" onClick={signOut}>Sign out</span>) : (<Link to='/signin'>Sign In</Link>)}
         </li>
         
       </ul>

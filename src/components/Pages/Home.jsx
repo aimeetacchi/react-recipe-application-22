@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 // import { withAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
+// import '@aws-amplify/ui-react/styles.css';
 
 import PropTypes from 'prop-types'
 import { getData } from '../../actions/getRecipes'
@@ -15,7 +15,7 @@ import SearchRecipeForm from '../Search/Search';
 import styled from 'styled-components';
 
 const Home = (props) => {
-  const { loggedIn } = props;
+  const { authState } = props;
   const [searchedRecipes, setSearchedRecipes] = useState([]);
   const [noSearchFound, setNoSearchFound] = useState(false);
 
@@ -59,7 +59,7 @@ const Home = (props) => {
         <h1>Recipe App</h1>
         <p>Check out below the latest dishes we're loving</p>
 
-        { loggedIn && ( <AddRecipeForm/> )}
+        { authState === 'signedin' && ( <AddRecipeForm/> )}
         
         { faveData.length > 0 && (
         <>
