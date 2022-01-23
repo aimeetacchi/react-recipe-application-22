@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import AddRecipeForm from '../AddRecipeForm/AddRecipeForm'
 import RecipeItemFave from '../RecipeItemFave/RecipeItemFave';
+
 import RecipeItem from '../RecipeItem/RecipeItem';
 import SearchRecipeForm from '../Search/Search';
 
@@ -20,12 +21,14 @@ const Home = (props) => {
   const [noSearchFound, setNoSearchFound] = useState(false);
 
   const data = useSelector((state) => state.getRecipes.data);
-  const faveData = useSelector((state) => state.addFaveRecipe.faveData);
+  const faveData = useSelector((state) => state.faveRecipe.faveData);
   const loading = useSelector((state) => state.getRecipes.loading)
   const open = useSelector((state) => state.search.open)
  
   const dispatch = useDispatch();
 
+  console.log('fave data', faveData)
+  
   // SEARCH RECIPES
   const SearchRecipe = (value) => {
       const search = value.search.toLowerCase()
@@ -35,7 +38,6 @@ const Home = (props) => {
       console.log(result)
       setSearchedRecipes(result);
   }
-
 
   useEffect(() => {
     // dispatch call action getData - if data array length is less than 1...
@@ -49,9 +51,10 @@ const Home = (props) => {
 
 
   useEffect(() => {
+    console.log('useEffect running...')
   }, [searchedRecipes, faveData])
 
-  
+ 
   if(loading) return <div className="text-center">Loading...</div>
 
   return (

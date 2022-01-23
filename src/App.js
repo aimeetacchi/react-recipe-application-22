@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Auth } from 'aws-amplify';
-import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components';
+import { onAuthUIStateChange } from '@aws-amplify/ui-components';
 
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     
-      if(authState == 'signedin') {
+      if(authState === 'signedin') {
         navigate('/');
       }
 

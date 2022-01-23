@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
 import GetRecipesReducer from './getRecipes'
 import SearchReducer from './Search'
-import AddFaveRecipeReducer from './AddFaveRecipe';
+import FaveRecipeReducer from './FaveRecipe';
 
 // Add as many as you like.
 const reducers = combineReducers({
     getRecipes: GetRecipesReducer,
-    addFaveRecipe: AddFaveRecipeReducer,
+    faveRecipe: FaveRecipeReducer,
     search: SearchReducer,
 })
 

@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { removeFaveRecipe } from '../../actions/FaveRecipe'
+import { useDispatch } from 'react-redux'
 
 import { 
     Box,
@@ -26,7 +28,10 @@ const style = {
     p: 4,
   };
 
-const RecipeItemFave = ({item}) => {
+const RecipeItemFave = (props) => {
+
+    const dispatch = useDispatch();
+    const {item } = props;
 
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -35,6 +40,7 @@ const RecipeItemFave = ({item}) => {
     return (
         <GridItem>
             <RecipeCardFave>
+                <span className="removeFave" onClick={() =>  dispatch(removeFaveRecipe(item.id))}>X</span>
                 <RecipeName>{item.name}</RecipeName>
                 <p>Serves: {item.serves}</p>
                 <p>Prep Time: {item.prepTime} mins<br/>

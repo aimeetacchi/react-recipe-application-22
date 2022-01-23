@@ -15,9 +15,7 @@ export const GridItem = styled.div`
 
   @media (min-width: 1124px) {
       width: 30%;
-    }
-
-   
+    }   
 `;
 
 export const RecipeName = styled.h2`
@@ -28,4 +26,13 @@ export const RecipeName = styled.h2`
 export const RecipeCardFave = styled.div`
   padding: 10px;
   flex-grow: 1;
+
+  .removeFave {
+    cursor: pointer;
+    padding: 0 20px;
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+  }
 `;

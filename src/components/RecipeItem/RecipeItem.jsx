@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AddFaveRecipe } from '../../actions/AddFaveRecipe'
+import { addFaveRecipe } from '../../actions/FaveRecipe'
 import { useDispatch } from 'react-redux'
 
 import { 
@@ -54,7 +54,7 @@ const RecipeItem = ({item}) => {
             </RecipeCard>
             {item.file && item.file.key !== 'public/undefined' && <img src={`https://${item.file.bucket}.s3.amazonaws.com/${item.file.key}`} alt='recipe'/>}
             
-            <AddToFaveBtn onClick={() => dispatch(AddFaveRecipe(item))}>
+            <AddToFaveBtn onClick={() => dispatch(addFaveRecipe(item))}>
                 Add to Favourites
             </AddToFaveBtn>
             <div>
