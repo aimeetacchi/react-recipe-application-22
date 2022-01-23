@@ -25,7 +25,7 @@ const Nav = (props) => {
         { pathname === '/' &&
           (<li className='nav-list__item search'><span onClick={() => openSearchBox()}><SearchIcon/> Search Recipe...</span></li>)
         }
-        <li className='nav-list__item'>
+        <li className='nav-list__item nav-list__item--sign'>
           { authState === 'signedin' ? (<span className="signout" onClick={signOut}>Sign out</span>) : (<Link to='/signin'>Sign In</Link>)}
         </li>
         

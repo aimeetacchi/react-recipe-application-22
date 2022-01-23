@@ -11,7 +11,6 @@ export const addRecipe = (recipe) => async dispatch => {
     
     
         // Adding the Data from AWS
-        debugger;
         const res = await API.graphql({
             query: createRecipe,
             variables: {input: recipe},

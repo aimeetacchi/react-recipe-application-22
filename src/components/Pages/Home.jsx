@@ -21,13 +21,11 @@ const Home = (props) => {
   const [noSearchFound, setNoSearchFound] = useState(false);
 
   const data = useSelector((state) => state.getRecipes.data);
-  const faveData = useSelector((state) => state.faveRecipe.faveData);
+  let faveData = useSelector((state) => state.faveRecipe.faveData);
   const loading = useSelector((state) => state.getRecipes.loading)
   const open = useSelector((state) => state.search.open)
  
   const dispatch = useDispatch();
-
-  console.log('fave data', faveData)
   
   // SEARCH RECIPES
   const SearchRecipe = (value) => {
@@ -51,8 +49,7 @@ const Home = (props) => {
 
 
   useEffect(() => {
-    console.log('useEffect running...')
-  }, [searchedRecipes, faveData])
+  }, [searchedRecipes, faveData, data])
 
  
   if(loading) return <div className="text-center">Loading...</div>

@@ -22,8 +22,8 @@ export const addFaveRecipe = (item) => async dispatch => {
         dispatch({
             type: ADD_FAVE_RECIPE,
             payload: item
-        })
-     
+        }) 
+       
         dispatch(addingFaveRecipesComplete()); 
 
     } catch(err) {
