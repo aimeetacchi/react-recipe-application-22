@@ -1,6 +1,6 @@
 
 import Types from './types';
-import { API } from 'aws-amplify'
+import { API, graphqlOperation } from 'aws-amplify'
 import { createRecipe } from '../graphql/mutations'
 
 // ADD RECIPE  ==
@@ -11,11 +11,13 @@ export const addRecipe = (recipe) => async dispatch => {
     
     
         // Adding the Data from AWS
-        const res = await API.graphql({
-            query: createRecipe,
-            variables: {input: recipe},
-            authMode: 'AWS_IAM',
-        });
+        const res = await API.graphql(graphqlOperation(createRecipe, {input: recipe}));
+
+        // const res = await API.graphql({
+        //     query: createRecipe,
+        //     variables: {input: recipe},
+        //     authMode: 'AWS_IAM',
+        // });
         console.log('Recipe Data', res.data.createRecipe)
         
         const data = res.data.createRecipe.items
@@ -26,7 +28,6 @@ export const addRecipe = (recipe) => async dispatch => {
         })
      
         dispatch(addRecipeComplete()); 
-
     } catch(err) {
         console.log('error Adding recipes:', err)
 

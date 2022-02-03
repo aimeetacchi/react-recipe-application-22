@@ -1,0 +1,48 @@
+type CookBook @model @auth(rules: [
+  { allow: public, operations: [read], provider: iam },
+  { allow: private, provider: iam }
+  { allow: owner }
+  ]) {
+  id: ID!
+  name: String!
+  posts: [Recipe] @hasMany
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+}
+
+type Recipe @model @auth(rules: [
+  { allow: public, operations: [read], provider: iam },
+  { allow: private, provider: iam }
+  { allow: owner }
+  ]) {
+  id: ID!
+  name: String!
+  description: String
+  prepTime: String
+  cookingTime: String
+  difficulty: String
+  serves: String
+  ingredients: [String]
+  ingredientsSet2: [String]
+  ingredientsSet3: [String]
+   # Reference the S3Object type from a field
+  file: S3Object
+  tags: [String]
+  owner: String
+  cookBook: CookBook @belongsTo
+  comments: [Comment] @hasMany
+}
+
+type Comment @model @auth(rules: [
+  { allow: public, operations: [read], provider: iam },
+  { allow: private, provider: iam }
+  { allow: owner }
+  ]) {
+  id: ID!
+  recipe: Recipe @belongsTo
+  content: String!
+}

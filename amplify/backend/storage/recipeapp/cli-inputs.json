@@ -1,13 +1,12 @@
 {
-  "resourceName": "recipeimagestorage",
-  "policyUUID": "ab9ff825",
-  "bucketName": "recipeimages",
+  "resourceName": "recipeapp",
+  "policyUUID": "8b4518ae",
+  "bucketName": "recipeappbucket",
   "storageAccess": "auth",
   "guestAccess": [],
   "authAccess": [
     "CREATE_AND_UPDATE",
-    "READ",
-    "DELETE"
+    "READ"
   ],
   "triggerFunction": "NONE",
   "groupAccess": {}

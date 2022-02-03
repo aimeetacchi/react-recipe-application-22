@@ -1,5 +1,5 @@
 projects:
-  recipeamplifyapp22:
+  recipeapi22:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js

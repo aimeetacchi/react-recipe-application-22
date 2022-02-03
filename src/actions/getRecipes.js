@@ -1,6 +1,6 @@
 
 import Types from './types';
-import { API } from 'aws-amplify'
+import { API, graphqlOperation } from 'aws-amplify'
 import { listRecipes } from '../graphql/queries'
 
 // GET DATA EXAMPLE ==
@@ -21,7 +21,7 @@ export const getData = () => async dispatch => {
         // Getting the Data from AWS
         // const recipesData = await API.graphql(graphqlOperation(listRecipes));
 
-        // Getting the Data from AWS - unauth way
+        // Getting the Data from AWS - IAM unauth way
         const recipesData = await API.graphql({
             query: listRecipes,
             authMode: 'AWS_IAM'

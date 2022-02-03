@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Auth } from 'aws-amplify';
-import { onAuthUIStateChange } from '@aws-amplify/ui-components';
+import { onAuthUIStateChange, AuthState} from '@aws-amplify/ui-components';
 
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
@@ -30,11 +30,19 @@ function App() {
         navigate('/');
       }
 
+      if (authState === undefined) {
+        Auth.currentAuthenticatedUser().then(authData => {
+          setAuthState(AuthState.SignedIn);
+          setUser(authData);
+        });
+      }
+  
       return onAuthUIStateChange((nextAuthState, authData) => {
-          setAuthState(nextAuthState);
-          setUser(authData)
+        setAuthState(nextAuthState);
+        setUser(authData);
+        console.log('auth state changing');
       });
-     
+
   }, [authState]);
 
   // Sign Out
@@ -67,12 +75,12 @@ function App() {
       <Nav authState={authState} signOut={signOut} openSearchRecipe={openSearchRecipe} />
     
       <main>
-      <Routes>
-          <Route exact path="/" element={<Home authState={authState}/>}/>
-          <Route path='/about' element={<About/>} />
-          <Route exact path="/signin" element={<SignInForm authState={authState}/>}/>
-          <Route path="*" element={<Error/>} />
-      </Routes>
+        <Routes>
+            <Route exact path="/" element={<Home authState={authState}/>}/>
+            <Route path='/about' element={<About/>} />
+            <Route exact path="/signin" element={<SignInForm authState={authState}/>}/>
+            <Route path="*" element={<Error/>} />
+        </Routes>
       </main>
       <Footer/>
     </div>

@@ -21,7 +21,7 @@ const Home = (props) => {
   const [noSearchFound, setNoSearchFound] = useState(false);
 
   const data = useSelector((state) => state.getRecipes.data);
-  let faveData = useSelector((state) => state.faveRecipe.faveData);
+  // let faveData = useSelector((state) => state.faveRecipe.faveData);
   const loading = useSelector((state) => state.getRecipes.loading)
   const open = useSelector((state) => state.search.open)
  
@@ -49,7 +49,7 @@ const Home = (props) => {
 
 
   useEffect(() => {
-  }, [searchedRecipes, faveData, data])
+  }, [searchedRecipes, data])
 
  
   if(loading) return <div className="text-center">Loading...</div>
@@ -61,7 +61,7 @@ const Home = (props) => {
 
         { authState === 'signedin' && ( <AddRecipeForm/> )}
         
-        { faveData.length > 0 && (
+        {/* { faveData.length > 0 && (
         <>
             <h2>Favourite Recipes</h2>
             <GridStyle>
@@ -74,7 +74,7 @@ const Home = (props) => {
             <DividerStyle/>
           </>
           )  
-        }
+        } */}
 
         {
           open && (<SearchRecipeForm SearchRecipe={SearchRecipe} setSearchedRecipes={setSearchedRecipes} setNoSearchFound={setNoSearchFound} />)

@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
     "auth": {
-        "recipeamplifyapp229a9fd1cf": {
+        "recipeamplifyapp22c498e875": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -11,13 +11,14 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "api": {
-        "recipeamplifyapp22": {
+        "recipeapi22": {
+            "GraphQLAPIKeyOutput": "string",
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }
     },
     "storage": {
-        "recipeimagestorage": {
+        "recipeapp": {
             "BucketName": "string",
             "Region": "string"
         }

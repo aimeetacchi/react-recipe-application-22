@@ -1,6 +1,6 @@
 {
   "auth": {
-    "recipeamplifyapp229a9fd1cf": {
+    "recipeamplifyapp22c498e875": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -28,7 +28,7 @@
     }
   },
   "api": {
-    "recipeamplifyapp22": {
+    "recipeapi22": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "output": {
@@ -36,10 +36,18 @@
           "defaultAuthentication": {
             "authenticationType": "AMAZON_COGNITO_USER_POOLS",
             "userPoolConfig": {
-              "userPoolId": "authrecipeamplifyapp229a9fd1cf"
+              "userPoolId": "authrecipeamplifyapp22c498e875"
             }
           },
           "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "API_KEY",
+              "apiKeyConfig": {
+                "apiKeyExpirationDays": 7,
+                "apiKeyExpirationDate": "2022-02-06T21:20:51.180Z",
+                "description": "recipeapikey"
+              }
+            },
             {
               "authenticationType": "AWS_IAM"
             }
@@ -49,7 +57,7 @@
     }
   },
   "storage": {
-    "recipeimagestorage": {
+    "recipeapp": {
       "service": "S3",
       "providerPlugin": "awscloudformation",
       "dependsOn": []
@@ -59,7 +67,7 @@
     "amplifyhosting": {
       "service": "amplifyhosting",
       "type": "cicd",
-      "lastPushTimeStamp": "2022-01-15T21:02:45.668Z"
+      "lastPushTimeStamp": "2022-02-03T21:59:05.371Z"
     }
   }
 }
