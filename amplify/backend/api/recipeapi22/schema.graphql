@@ -23,19 +23,7 @@ type Recipe @model @auth(rules: [
   file: S3Object
   tags: [String]
   owner: String
-  comments: [Comment] @hasMany
   likes: [Like] @hasMany
-}
-
-type Comment @model @auth(rules: [
-  { allow: public, operations: [read], provider: iam },
-  { allow: private, provider: iam }
-  { allow: owner }
-  ]) {
-  id: ID!
-  recipe: Recipe @belongsTo
-  content: String!
-  owner: String
 }
 
 type Like @model @auth(rules: [

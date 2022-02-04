@@ -1,108 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createCookBook = /* GraphQL */ `
-  mutation CreateCookBook(
-    $input: CreateCookBookInput!
-    $condition: ModelCookBookConditionInput
-  ) {
-    createCookBook(input: $input, condition: $condition) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
-export const updateCookBook = /* GraphQL */ `
-  mutation UpdateCookBook(
-    $input: UpdateCookBookInput!
-    $condition: ModelCookBookConditionInput
-  ) {
-    updateCookBook(input: $input, condition: $condition) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
-export const deleteCookBook = /* GraphQL */ `
-  mutation DeleteCookBook(
-    $input: DeleteCookBookInput!
-    $condition: ModelCookBookConditionInput
-  ) {
-    deleteCookBook(input: $input, condition: $condition) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
 export const createRecipe = /* GraphQL */ `
   mutation CreateRecipe(
     $input: CreateRecipeInput!
@@ -126,30 +24,19 @@ export const createRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
@@ -176,30 +63,19 @@ export const updateRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
@@ -226,40 +102,31 @@ export const deleteRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
-export const createComment = /* GraphQL */ `
-  mutation CreateComment(
-    $input: CreateCommentInput!
-    $condition: ModelCommentConditionInput
+export const createLike = /* GraphQL */ `
+  mutation CreateLike(
+    $input: CreateLikeInput!
+    $condition: ModelLikeConditionInput
   ) {
-    createComment(input: $input, condition: $condition) {
+    createLike(input: $input, condition: $condition) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -278,35 +145,27 @@ export const createComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;
-export const updateComment = /* GraphQL */ `
-  mutation UpdateComment(
-    $input: UpdateCommentInput!
-    $condition: ModelCommentConditionInput
+export const updateLike = /* GraphQL */ `
+  mutation UpdateLike(
+    $input: UpdateLikeInput!
+    $condition: ModelLikeConditionInput
   ) {
-    updateComment(input: $input, condition: $condition) {
+    updateLike(input: $input, condition: $condition) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -325,35 +184,27 @@ export const updateComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;
-export const deleteComment = /* GraphQL */ `
-  mutation DeleteComment(
-    $input: DeleteCommentInput!
-    $condition: ModelCommentConditionInput
+export const deleteLike = /* GraphQL */ `
+  mutation DeleteLike(
+    $input: DeleteLikeInput!
+    $condition: ModelLikeConditionInput
   ) {
-    deleteComment(input: $input, condition: $condition) {
+    deleteLike(input: $input, condition: $condition) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -372,25 +223,15 @@ export const deleteComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;

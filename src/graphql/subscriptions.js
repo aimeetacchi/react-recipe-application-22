@@ -1,99 +1,6 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateCookBook = /* GraphQL */ `
-  subscription OnCreateCookBook($owner: String) {
-    onCreateCookBook(owner: $owner) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
-export const onUpdateCookBook = /* GraphQL */ `
-  subscription OnUpdateCookBook($owner: String) {
-    onUpdateCookBook(owner: $owner) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
-export const onDeleteCookBook = /* GraphQL */ `
-  subscription OnDeleteCookBook($owner: String) {
-    onDeleteCookBook(owner: $owner) {
-      id
-      name
-      posts {
-        items {
-          id
-          name
-          description
-          prepTime
-          cookingTime
-          difficulty
-          serves
-          ingredients
-          ingredientsSet2
-          ingredientsSet3
-          tags
-          owner
-          createdAt
-          updatedAt
-          cookBookPostsId
-        }
-        nextToken
-      }
-      createdAt
-      updatedAt
-      owner
-    }
-  }
-`;
 export const onCreateRecipe = /* GraphQL */ `
   subscription OnCreateRecipe($owner: String) {
     onCreateRecipe(owner: $owner) {
@@ -114,30 +21,19 @@ export const onCreateRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
@@ -161,30 +57,19 @@ export const onUpdateRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
@@ -208,37 +93,28 @@ export const onDeleteRecipe = /* GraphQL */ `
       }
       tags
       owner
-      cookBook {
-        id
-        name
-        posts {
-          nextToken
-        }
-        createdAt
-        updatedAt
-        owner
-      }
-      comments {
+      likes {
         items {
           id
-          content
+          numberLikes
+          owner
           createdAt
           updatedAt
-          recipeCommentsId
-          owner
+          recipeLikesId
         }
         nextToken
       }
       createdAt
       updatedAt
-      cookBookPostsId
     }
   }
 `;
-export const onCreateComment = /* GraphQL */ `
-  subscription OnCreateComment($owner: String) {
-    onCreateComment(owner: $owner) {
+export const onCreateLike = /* GraphQL */ `
+  subscription OnCreateLike($owner: String) {
+    onCreateLike(owner: $owner) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -257,32 +133,24 @@ export const onCreateComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;
-export const onUpdateComment = /* GraphQL */ `
-  subscription OnUpdateComment($owner: String) {
-    onUpdateComment(owner: $owner) {
+export const onUpdateLike = /* GraphQL */ `
+  subscription OnUpdateLike($owner: String) {
+    onUpdateLike(owner: $owner) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -301,32 +169,24 @@ export const onUpdateComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;
-export const onDeleteComment = /* GraphQL */ `
-  subscription OnDeleteComment($owner: String) {
-    onDeleteComment(owner: $owner) {
+export const onDeleteLike = /* GraphQL */ `
+  subscription OnDeleteLike($owner: String) {
+    onDeleteLike(owner: $owner) {
       id
+      numberLikes
+      owner
       recipe {
         id
         name
@@ -345,25 +205,15 @@ export const onDeleteComment = /* GraphQL */ `
         }
         tags
         owner
-        cookBook {
-          id
-          name
-          createdAt
-          updatedAt
-          owner
-        }
-        comments {
+        likes {
           nextToken
         }
         createdAt
         updatedAt
-        cookBookPostsId
       }
-      content
       createdAt
       updatedAt
-      recipeCommentsId
-      owner
+      recipeLikesId
     }
   }
 `;
