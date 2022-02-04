@@ -56,7 +56,13 @@
       }
     }
   },
-  "storage": {},
+  "storage": {
+    "recipeImages": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": []
+    }
+  },
   "hosting": {
     "amplifyhosting": {
       "service": "amplifyhosting",
