@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const GridItem = styled.div`
   border-radius: 20px 20px 0 0;
-  width: 100%;
+  width: 90%;
   background-color: white;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin: 20px auto;
   
   @media (min-width: 720px) {
       width: 40%;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const NavStyles = styled.nav`
-      height: 15vh;
+      /* height: 15vh; */
     .nav-list {
         margin: 0;
         padding: 0;
@@ -23,7 +23,8 @@ export const NavStyles = styled.nav`
                     }
                 }
             &--sign {
-                margin-left: auto;
+                margin: auto;
+                width: 90%;
                 
 
                 a, span {
@@ -47,20 +48,24 @@ export const NavStyles = styled.nav`
         cursor: pointer;
     }
   
- /* Desktop */
-    @media (min-width: 720px) {
-        height: 10vh;
-        .nav-list {
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-        
-            &__item {
-                padding: 0 10px;
-        
-             
+        /* Desktop */
+        @media (min-width: 720px) {
+            height: 10vh;
+            .nav-list {
+                padding: 20px 0;
+                display: flex;
+                justify-content: center;
+            
+                &__item {
+                    padding: 0 10px;
+            
+                    &--sign {
+                        margin-right: 0;
+                        margin-left: auto;
+                        width: 200px;
+                    }
+                
                 }
             }
         }
-    }
 `;
