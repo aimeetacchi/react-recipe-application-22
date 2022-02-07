@@ -1,13 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import awsExports from '../../aws-exports'
+import { Storage } from 'aws-amplify'
 import * as Yup from "yup";
 
 import { addRecipe } from '../../actions/AddRecipe'
 import { useDispatch } from 'react-redux'
 
-
 const AddRecipeForm = () => {
     const dispatch = useDispatch();
+    const [imageValue, setImageValue] = useState();
+
+    const [recipe, setRecipeState] = useState();
+
+   const addRecipeImage = async (values) => {
+       const {name, description, difficulty, prepTime, cookingTime, serves } = values;
+        try {
+            const result = await Storage.put(imageValue.name, imageValue, {
+                contentType: 'image/jpg'
+            })
+
+            if(result) {
+                const image = {
+                        bucket: awsExports.aws_user_files_s3_bucket,
+                        region: awsExports.aws_user_files_s3_bucket_region,
+                        key: 'public/' + result.key
+                }
+
+                setRecipeState({
+                    name,
+                    difficulty,
+                    description,
+                    serves,
+                    prepTime,
+                    cookingTime,
+                    file: image,
+                })       
+            }
+    
+        } catch (error) {
+            console.log('Error uploading file:', error)
+        }
+    }
+
+    useEffect(() => {
+        if(recipe){
+            console.log('Calling add recipe...', recipe)
+            dispatch(addRecipe(recipe))
+        }
+    }, [recipe])
 
     return (
         <Formik
@@ -18,24 +59,15 @@ const AddRecipeForm = () => {
                 serves: "",
                 prepTime: "",
                 cookingTime: "",
+                file: ""
             }}
             validationSchema={Yup.object().shape({
                 name: Yup.string()
                 .required("Recipe name is required")
             })}
             onSubmit={values => {
-
-                const recipe = {
-                    name: values.name,
-                    difficulty: values.difficulty,
-                    description: values.description,
-                    serves: values.serves,
-                    prepTime: values.preptime, 
-                    cookingTime: values.cookingtime
-                }
-
-                // Call Action to submit Form Data --
-                dispatch(addRecipe(recipe))
+                // call Add Image Storage API and Store Values in State ===
+                addRecipeImage(values)                
             }}
         >
         {props => {
@@ -79,7 +111,17 @@ const AddRecipeForm = () => {
                     />
                     <ErrorMessage name="description" component="div" className="invalid-feedback" />
                 </div>
-                
+
+                <div>
+                <input
+                    type="file"
+                    name="image"
+                    onChange={(event) => {
+                    setImageValue(event.currentTarget.files[0]);
+                    }}
+                    />
+                </div>
+
                 <div>
                     <label htmlFor="difficulty" style={{ display: "block" }}>
                     Difficulty

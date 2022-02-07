@@ -8,7 +8,7 @@ import { resetSearch } from '../../actions/Search'
 import { useDispatch, useSelector } from 'react-redux'
 
 import AddRecipeForm from '../AddRecipeForm/AddRecipeForm'
-import RecipeItemFave from '../RecipeItemFave/RecipeItemFave';
+// import RecipeItemFave from '../RecipeItemFave/RecipeItemFave';
 
 import RecipeItem from '../RecipeItem/RecipeItem';
 import SearchRecipeForm from '../Search/Search';
@@ -114,11 +114,11 @@ const GridStyle = styled.div`
     }
 `;
 
-const DividerStyle = styled.div`
-  height: 15px;
-  background-color: grey;
-  margin: 30px 150px;
-`
+// const DividerStyle = styled.div`
+//   height: 15px;
+//   background-color: grey;
+//   margin: 30px 150px;
+// `
 
 
 Home.defaultProps = {

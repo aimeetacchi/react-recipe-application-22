@@ -14,7 +14,7 @@ import {
     Backdrop
 } from '@mui/material';
 
-import { GridItem, RecipeName, RecipeCard, AddToFaveBtn } from './styles';
+import { GridItem, RecipeName, RecipeCard, /*AddToFaveBtn*/ } from './styles';
 
 
 const style = {
