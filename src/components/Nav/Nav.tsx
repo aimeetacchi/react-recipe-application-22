@@ -1,9 +1,14 @@
-import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import SearchIcon from '@mui/icons-material/Search';
 import { NavStyles } from './styles';
 
-const Nav = (props) => {
+interface NavProps {
+  openSearchRecipe: () => void;
+  authState: string;
+  signOut: () => void;
+}
+
+const Nav = (props: NavProps) => {
   const { openSearchRecipe, authState, signOut } = props;
   console.log('NAV authState', authState )
 

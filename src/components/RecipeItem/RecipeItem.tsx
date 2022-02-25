@@ -16,7 +16,6 @@ import {
 
 import { GridItem, RecipeName, RecipeCard, /*AddToFaveBtn*/ } from './styles';
 
-
 const style = {
     position: 'absolute',
     top: '50%',
@@ -30,10 +29,29 @@ const style = {
     '@media (min-width: 1124px)': {
         width: 1024,
     },
-  };
+  } as const;
 
-const RecipeItem = ({item}) => {
+interface RecipeItemProps {
+    item: {
+        serves: string
+        name: string
+        description: string
+        cookingTime: string
+        prepTime: string
+        difficulty: string
+        ingredients: [string]
+        tags: [string]
+        file: {
+            key: string
+            bucket: string
+            region: string
+        }
+    }
+}
 
+const RecipeItem = (props: RecipeItemProps) => {
+    const { item } = props;
+    console.log(item)
     // const dispatch = useDispatch();
 
     const [open, setOpen] = React.useState(false);
@@ -80,16 +98,16 @@ const RecipeItem = ({item}) => {
                         {item.name}
                         </Typography>
 
-                        <List>
+                        {/* <List>
                         {item.ingredients && item.ingredients.map((ingredient, key) => (
-                                <ListItem key={key} primary="Single-line item">
+                                <ListItem key={key}>
                                     {ingredient}
                                 </ListItem>
                             ))}
-                        </List>
+                        </List> */}
                         {item.description &&
                             (<Typography variant="body1" id="transition-modal-description" sx={{ mt: 1 }}>
-                                {item.description}
+                                <strong>Steps:</strong> {item.description}
                             </Typography>)
                         }
 

@@ -1,33 +1,36 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
 import { Form, Field } from 'react-final-form'
 
 import { SearchForm, SearchFormGroup, SearchFormError, SearchGrid, FormWrapper, ResetBtn } from './styles'
 
-const SearchRecipeForm = ({
-  SearchRecipe,
-  setSearchedRecipes,
-  setNoSearchFound
-}) => {
-  
-    const onSubmit = (value) => {
+interface SearchRecipeFormProps {
+  SearchRecipe: (value: string) => void
+  setSearchedRecipes: (value: []) => void
+  setNoSearchFound: (value: boolean) => void
+}
+
+const SearchRecipeForm = (props : SearchRecipeFormProps) => {
+
+  const {SearchRecipe, setSearchedRecipes, setNoSearchFound } = props;
+
+    const onSubmit = (value: string) => {
       SearchRecipe(value)
     }
 
-    const validate = (values) => {
-      const errors = {};
-      if (!values.search) {
-        errors.search = "Required";
-      }
-      return errors;
-    }
+    // const validate = (values: string) => {
+    //   const errors = {
+    //   };
+    //   if (!values.search) {
+    //     errors.search = "Required";
+    //   }
+    //   return errors;
+    // }
 
     return (
       <FormWrapper>
         <Form
         onSubmit={onSubmit}
-        validate={validate}
-        render={({ handleSubmit, form, submitting, values, reset }) => (
+        // validate={validate}
+        render={({ handleSubmit, form, submitting, values, /*reset*/ }) => (
           <SearchForm onSubmit={handleSubmit}>
             <Field name="search">
               {({ input, meta }) => (
@@ -60,7 +63,6 @@ const SearchRecipeForm = ({
     </FormWrapper>  
     )
 }
-
 
 export default SearchRecipeForm
 

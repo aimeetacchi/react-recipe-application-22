@@ -8,13 +8,13 @@ import { Search } from './actions/Search'
 import { useDispatch } from 'react-redux'
 import './App.scss';
 
-import Nav from './components/Nav/Nav.jsx'
-import Home from './components/Pages/Home.jsx'
-import About from './components/Pages/About/About.jsx'
+import Nav from './components/Nav/Nav'
+import Home from './components/Pages/Home'
+import About from './components/Pages/About/About'
 import SignInForm from './components/Pages/SignInForm/SignInForm'
-import Error from './components/Pages/Error.jsx'
+import Error from './components/Pages/Error'
 
-import Footer from './components/Footer.jsx';
+import Footer from './components/Footer';
 
 function App() {
   const [authState, setAuthState] = useState();

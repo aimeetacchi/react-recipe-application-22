@@ -1,6 +1,6 @@
 
 import Types from './types';
-import { API, graphqlOperation } from 'aws-amplify'
+import { API } from 'aws-amplify'
 import { listRecipes } from '../graphql/queries'
 
 // GET DATA EXAMPLE ==
